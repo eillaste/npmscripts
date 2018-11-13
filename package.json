@@ -35,7 +35,8 @@
 		"push:origin": "git push --tags origin HEAD:master",
 		"push:heroku": "git push heroku master",
 		"launch:prod": "heroku open",
-		"deploy:prod:script": "bash ./deployProd.bat"
+		"deploy:prod:script": "bash ./deployProd.bat",
+		"deploy:prod": "npm run test:deploy -s & npm run build -s & npm run version:patch &npm run launch:prod"
 	},
 	"engines": {
 		"node": "~8.9.4",
