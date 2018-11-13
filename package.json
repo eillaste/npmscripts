@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "mocha test -u bdd -R spec",
+		"test:options": "mocha",
 		"start": "node index.js",
 		"start:dev": "node index.js 4000",
 		"lint": "jshint . --exclude ./lib",
@@ -34,8 +35,7 @@
 		"push:origin": "git push --tags origin HEAD:master",
 		"push:heroku": "git push heroku master",
 		"launch:prod": "heroku open",
-		"deploy:prod": "npm run test:deploy -s && npm run build -s && npm run version:patch && npm run launch:prod",
-		"test:deploy": "npm t -- -R dot"
+		"deploy:prod:script": "bash ./deployProd.bat"
 	},
 	"engines": {
 		"node": "~8.9.4",
