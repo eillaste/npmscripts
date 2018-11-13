@@ -1,0 +1,18 @@
+p {
+  background-color: #ffffff;
+  color: #1a237e;
+  padding: 15px;
+}
+ul {
+  background-color: #ffffff;
+}
+li {
+  color: #1a237e;
+}
+/* Mixin */
+/* Implementation */
+#somediv {
+  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+}

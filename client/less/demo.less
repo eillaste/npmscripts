@@ -1,0 +1,27 @@
+@background-color: #ffffff;
+@text-color: #1a237e;
+
+p {
+	background-color: @background-color;
+	color: @text-color;
+	padding: 15px;
+}
+
+ul {
+	background-color: @background-color;
+}
+
+li {
+	color: @text-color;
+}
+/* Mixin */
+.box-shadow(@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+/* Implementation */
+#somediv {
+	.box-shadow(5px, 5px, 6px, 0.3);
+}
